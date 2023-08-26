@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="/scripts/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+</head>
+<body>
+    <div id="app">
+        <div class="menutimer">
+            <div id="timer">
+                <span id="minutes">25</span><span>:</span><span id="seconds">00</span>
+            </div>
+
+            <div id="controls">
+                <button class="controls play-circle ph ph-play-circle" data-action="toggleRunning" alt="Inicie o contador"></button>
+                <button class="controls stop-circle ph ph-pause-circle" data-action="toggleStop" alt="Pause o contador"></button>
+                <button class="controls plus-circle ph ph-plus-circle" data-action="morefiveminutes" alt="Aumente o tempo em 5 minutos"></img></button>
+                <button class="controls minus-circle ph ph-minus-circle" data-action="lessfiveminutes" alt="Diminua o tempo em 5 minutos"></button>
+            </div>
+        </div>
+
+        <div id="sounds">
+            <button class="ph ph-tree" alt="Som Floresta" data-action="toggleMusic"></button>
+            <button  class="ph ph-cloud-rain" alt="Som Chuva" data-action="toggleMusic"></button>
+            <button class="ph ph-storefront" alt="Som Loja" data-action="toggleMusic"></button>
+            <button class="ph ph-fire" alt="Som Lareira" data-action="toggleMusic"></button>
+        </div>
+    </div>
+</body>
+</html>

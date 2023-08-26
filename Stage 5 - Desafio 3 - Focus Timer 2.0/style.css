@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --hue: 194;
+    --bg-button-color: hsla(240, 9%, 89%, 1);
+    --bg-button-click: hsla(var(--hue), 97%, 31%, 1);
+    --bg-button-text-click: hsl(0,0%,89%);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+}
+
+#timer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: normal;
+
+    margin-right: 19.2rem;
+}
+
+.controls + .controls {
+    margin-left: 4rem;
+
+}
+
+#controls .ph {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 5rem;
+}
+
+button {
+    background: none;
+    border: none;  
+}
+
+#sounds {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas: "A B";
+}
+
+.tree {
+ grid-area: "A";
+}
+
+.cloud {
+ grid-area: "B";
+}
+
+#sounds .ph {
+    background-color: var(--bg-button-color);
+    border-radius: 3rem;
+    
+    width: 13.8rem;
+    height: 15.2rem;
+
+    font-size: 7rem;
+
+    padding: 25%;
+}
+
+
+#sounds .music-on {
+    background-color: var(--bg-button-click);
+    color: var(--bg-button-text-click);
+}
+
+.ph {
+    cursor: pointer;
+}
